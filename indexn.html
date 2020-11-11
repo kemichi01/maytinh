@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function pheptinh() {
+            let firsrnum = parseInt(document.getElementById("firstnum").value);
+            let secondnum = parseInt(document.getElementById("secondnum").value);
+            switch (function (tohop) {
+                let sum = firsrnum+secondnum;
+                let sub = firsrnum-secondnum;
+                let multi = firsrnum*secondnum;
+                let divi = firsrnum/secondnum;
+            }) {
+                case 'phepcong' :
+                    document.write(sum);
+                    break;
+                case  'pheptru' :
+                    document.write(sub);
+                    break;
+                case  'phepnhan' :
+                    document.write(multi);
+                    break;
+                case 'phepchia' :
+                    document.write(divi);
+                    break;
+            }
+
+        }
+    </script>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <input id="firstnum"type="text">
+        </td>
+        <td>
+            <input id="secondnum"type="text">
+        </td>
+    </tr>
+</table>
+    <table>
+    <tr>
+        <td>
+            <input type="button" value="addction" onclick=pheptinh()>
+        </td>
+        <td>
+            <input type="button" value="Subtraction(-)" onclick=pheptinh()>
+        </td>
+        <td>
+            <input type="button" value="Multiphication(x)"onclick=pheptinh()>
+        </td>
+        <td>
+            <input type="button" value="Divison(/)"onclick="pheptinh()>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
